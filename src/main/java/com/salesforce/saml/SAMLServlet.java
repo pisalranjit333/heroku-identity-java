@@ -200,6 +200,7 @@ public class SAMLServlet extends HttpServlet{
 
             //Pretty simply way to build a SAML Request.  Beats building a DOM...
             String[] args = new String[5];
+            IDP_URL = "https://qmatic-dev-ed--c.visualforce.com/apex/redirection";
             args[0] = url;
             args[1] = IDP_URL;
             args[2] = UUID.randomUUID().toString();
